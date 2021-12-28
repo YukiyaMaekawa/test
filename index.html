@@ -5,6 +5,18 @@
 		<title>aaa</title>
 	</head>
 	<body>
-		Helo World!
+		<style>#c{border:1px solid #000;}</style>
+		Hello World!
+		<canvas id="c"></canvas>
+		<script>
+			const ctx=c.getContext('2d');
+			ctx.strokeStyle="4px rgb(128,128,"+Math.random()*255+")";
+			ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(100, 75);
+    ctx.lineTo(100, 25);
+    ctx.stroke();
+					console.log(ctx);
+		</script>
 	</body>
 </html>
